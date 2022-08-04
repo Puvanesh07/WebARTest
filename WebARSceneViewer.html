@@ -6,13 +6,16 @@
 <body>
 
 <model-viewer id="model-viewer" src="https://interaktive10.github.io/hosted-assets/blueshoe.glb" ar ar-modes="scene-viewer webxr quick-look" xr-environment>
-  <button slot= "ar-button"> Activate AR</button>
+  <button slot= "ar-button" id="ar-button"> Activate AR</button>
 </model-viewer>
 
 
   <script>
-    console.log("Clicking the button");
-    document.getElementById("ar-button").click();
+    window.onload = function() {
+      alert("Clicking the button");
+      document.getElementById("ar-button").click();
+    }
+
   </script>
 
 </body>
