@@ -1,45 +1,11 @@
 <!DOCTYPE html>
 <html>
+    
+<body>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
     </script>
-<body>
-    <script>
-        var isMobile = {
-        Android: function() {
-            return navigator.userAgent.match(/Android/i);
-        },
-        BlackBerry: function() {
-            return navigator.userAgent.match(/BlackBerry/i);
-        },
-        iOS: function() {
-            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-        },
-        Opera: function() {
-            return navigator.userAgent.match(/Opera Mini/i);
-        },
-        Windows: function() {
-            return navigator.userAgent.match(/IEMobile/i);
-        },
-        any: function() {
-            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-        }
-
-    };
-
-if ( isMobile.Android() ) {
-
-    <model-viewer id="model-viewer" src="https://interaktive10.github.io/hosted-assets/blueshoe.glb" ar ar-modes=" scene-viewer quick-look webxr" xr-environment>
-</model-viewer>
-       // document.location.href = "https://interaktive10.github.io/hosted-assets/blueshoe.glb";
-    }
-else if(isMobile.iOS())
-{
-    <model-viewer id="model-viewer" src="https://interaktive10.github.io/hosted-assets/blueshoe.usdz" ar ar-modes="quick-look webxr scene-viewer " xr-environment>
-</model-viewer>
-}
-</script>
-
-
+   
+    <model-viewer data-js-focus-visible class="embed-responsive-item no_phoneon" src="https://firebasestorage.googleapis.com/v0/b/spase-prod.appspot.com/o/view%2Flanding%2Fgroup2whitehelmetplus%2Fmodel1.glb?alt=media&android=https://firebasestorage.googleapis.com/v0/b/spase-prod.appspot.com/o/view%2Flanding%2Fgroup2whitehelmetplus%2Fmodel1.glb" ios-src="https://firebasestorage.googleapis.com/v0/b/spase-prod.appspot.com/o/view%2Flanding%2Fgroup2whitehelmetplus%2Fmodel1.usdz?alt=media" preloadNAOFF ar auto-rotate camera-controls autoplay="true" shadow-intensity=".97" field-of-view="32deg" quick-look-browsers="safari chrome"  camera-orbit="0deg 75deg auto" min-field-of-view="10deg" max-field-of-view="90deg" min-camera-orbit="auto 0deg 5%" max-camera-orbit="auto 180deg 350%">  </model-viewer>
 
 </body>
 </html>
