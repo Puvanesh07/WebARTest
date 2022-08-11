@@ -4,21 +4,18 @@
 
 <body>
 
-<model-viewer id="model-viewer" src="https://interaktive10.github.io/hosted-assets/blueshoe.glb" ar ar-modes=" quick-look webxr scene-viewer " xr-environment>
-<!--   <button slot= "ar-button" id="ar-button"> Activate AR</button> -->
+<model-viewer id="model-viewer" src="https://interaktive10.github.io/hosted-assets/blueshoe.glb" ar ar-modes="scene-viewer quick-look webxr " xr-environment>
+  <button slot= "ar-button" id="ar-button"> Activate AR</button>
 </model-viewer>
 
-
-<!--   <script>
+  <script>
    window.onload = function() {
     document.getElementById("ar-button").click();
-//       window.alert = function (text){
-//         console.log("Alert text is "+ text);
-    //  }
-    } -->
-
-<!--   </script> -->
+       window.alert = function (text){
+         console.log("Alert text is "+ text);
+      }
+    }
+</script> 
 
 </body>
-
 </html>
