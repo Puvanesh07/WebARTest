@@ -2,6 +2,8 @@
 <html>
     
 <body>
+
+    <script>
     
      var isMobile = {
         Android: function() {
@@ -30,18 +32,20 @@ if ( isMobile.Android() ) {
   <button slot= "ar-button" id="ar-button"> Activate AR</button>
 </model-viewer>
 
-  <script>
+  
    window.onload = function() {
     document.getElementById("ar-button").click();
        window.alert = function (text){
          console.log("Alert text is "+ text);
       }
     }
-    </script> 
-    }
-    else if {
+}
+    
+    else  {
         <model-viewer id="model-viewer" src="https://interaktive10.github.io/hosted-assets/blueshoe.usdz" ar ar-modes="quick-look webxr scene-viewer " xr-environment>
-    }
+        </model-viewer>
+        }
+</script> 
 </body>
 </html>
 
