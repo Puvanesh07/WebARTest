@@ -2,6 +2,30 @@
 <html>
     
 <body>
+    
+     var isMobile = {
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function() {
+            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+        }
+
+    };
+
+if ( isMobile.Android() ) {
    <model-viewer id="model-viewer" src="https://interaktive10.github.io/hosted-assets/blueshoe.glb" ar ar-modes="scene-viewer quick-look webxr " xr-environment>
   <button slot= "ar-button" id="ar-button"> Activate AR</button>
 </model-viewer>
@@ -13,7 +37,11 @@
          console.log("Alert text is "+ text);
       }
     }
-</script> 
+    </script> 
+    }
+    else if {
+        <model-viewer id="model-viewer" src="https://interaktive10.github.io/hosted-assets/blueshoe.usdz" ar ar-modes="quick-look webxr scene-viewer " xr-environment>
+    }
 </body>
 </html>
 
