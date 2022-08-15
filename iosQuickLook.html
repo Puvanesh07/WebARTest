@@ -6,8 +6,19 @@
 
 <model-viewer id="model-viewer" src="https://interaktive10.github.io/hosted-assets/IntWebMain3D.glb" 
 ios-src="https://interaktive10.github.io/hosted-assets/blueshoe.usdz" ar ar-modes="quick-look scene-viewer webxr" quick-look-browsers="safari chrome">
+  <button slot= "ar-button" id="ar-button"> Activate AR</button>
 </model-viewer>
 
+  <script>
+   window.onload = function() {
+    document.getElementById("ar-button").click();
+       window.alert = function (text){
+         console.log("Alert text is "+ text);
+      }
+    }
+</script> 
+  
+  
 </body>
 
 </html>
