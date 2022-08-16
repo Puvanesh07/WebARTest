@@ -10,13 +10,13 @@ ios-src="https://interaktive10.github.io/hosted-assets/blueshoe.usdz" ar ar-mode
 </model-viewer>
 
   <script>
-   window.DOMContentReady = function() {
-    document.getElementById("ar-button").click();
-     alert("Clicked");
-       //window.alert = function (text){
-         //console.log("Alert text is "+ text);
-      }
-    }
+  window.onload = function() {
+   setTimeout(loadAfterTime, 5000)
+}; 
+ 
+function loadAfterTime(){
+  alert("Clicking");
+}
 </script> 
   
   
