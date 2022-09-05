@@ -4,20 +4,14 @@
 
 <body>
 
-<model-viewer id="model-viewer" src="https://interaktive10.github.io/hosted-assets/IntWebMain3D.glb" ar ar-modes="quick-look scene-viewer webxr" quick-look-browsers="safari chrome">
-  <button slot= "ar-button" id="ar-button"> Activate AR</button>
-</model-viewer>
+<model-viewer
+        id="reveal"
+        camera-controls touch-action="pan-y"
+        auto-rotate
+        src="https://interaktive10.github.io/hosted-assets/IntWebMain3D.glb"
+        style="width: 100%; height: 400px; top: 0px; background-color: transparent" alt="A 3D model" preload ar ar-modes="quick-look scene-viewer webxr" shadow-intensity="0.97" exposure="2"  interaction-prompt="auto" camera-controls autoplay="true" environmentImage="legacy" quick-look-browsers="safari chrome"  camera-orbit="0deg 75deg auto" min-field-of-view="10deg" max-field-of-view="100deg" min-camera-orbit="auto 0deg 80%" max-camera-orbit="auto 180deg 100%"  loading="eager" auto-rotate>
+        </model-viewer>
 
-  <script>
-  window.onload = function() {
-   setTimeout(loadAfterTime, 1000)
-}; 
- 
-function loadAfterTime(){
-  document.getElementById("ar-button").click();
-}
-</script> 
-  
   
 </body>
 </html>
