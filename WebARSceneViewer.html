@@ -2,22 +2,20 @@
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
 </script>
 
-<body>
-
-<!-- <model-viewer id="model-viewer" src="https://interaktive10.github.io/hosted-assets/blueshoe.glb" ar ar-modes="scene-viewer quick-look webxr " xr-environment> -->
-<model-viewer id="model-viewer" src="https://interaktive10.github.io/hosted-assets/Shoes Pair_V1.glb" ar ar-modes="quick-look webxr scene-viewer" xr-environment>
-
-  <button slot= "ar-button" id="ar-button"> Activate AR</button>
-</model-viewer>
-
-  <script>
-   window.onload = function() {
-    document.getElementById("ar-button").click();
-       window.alert = function (text){
-         console.log("Alert text is "+ text);
+<model-viewer
+        id="reveal"
+        camera-controls touch-action="pan-y"
+        auto-rotate
+        src="https://interaktive10.github.io/hosted-assets/IntWebMain3D.glb"
+        shadow-intensity="1" alt="A 3D model of a shishkebab">
+        </model-viewer>
+      <button slot= "ar-button" id="ar-button"> Activate AR</button>
+      <script>
+        window.onload = function() {
+         setTimeout(loadAfterTime, 1000)
+      };
+      function loadAfterTime(){
+        document.getElementById("ar-button").click();
       }
-    }
-</script> 
-
-</body>
+      </script>
 </html>
