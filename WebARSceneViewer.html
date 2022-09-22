@@ -6,13 +6,13 @@
         id="reveal"
         camera-controls touch-action="pan-y"
         auto-rotate src=" https://interaktive10.github.io/hosted-assets/IntWebMain3D.glb" 
-        ar ar-modes="webxr quick-look scene-viewer" quick-look-browsers="safari chrome" 
+        ar ar-modes="quick-look scene-viewer webxr" quick-look-browsers="safari chrome" 
         shadow-intensity="1" alt="A 3D model of a shishkebab">
         </model-viewer>
       <button slot= "ar-button" id="ar-button"> Activate AR</button>
       <script>
         window.onload = function() {
-         setTimeout(loadAfterTime, 2000)
+         setTimeout(loadAfterTime, 3000)
       };
       function loadAfterTime(){
         document.getElementById("ar-button").click();
